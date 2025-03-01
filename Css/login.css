@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'CustomFont';
+    /* Đặt tên tùy ý */
+    src: url('../fonts/Inter-Bold-VariableFont_opsz\,wght.ttf') format('truetype'),
+        url('../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype'),
+        url('../fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1199px) {
+    .login-container {
+        justify-content: center !important;
+    }
+}
+
+.navbar {
+    background-color: rgb(25, 32, 38);
+    margin-top: -8px;
+    padding: 1px;
+}
+
+.nav-img {
+    height: 100px;
+    margin-left: 35px;
+}
+
+.blink-hover:hover {
+    animation: blink 0.5s infinite;
+}
+
+.change-color:hover {
+    background-color: rgb(55, 70, 83) !important;
+    color: white !important;
+    transition: 0.2s;
+}
+
+body {
+    background-color: rgb(232, 233, 235);
+}
+
+.login-img img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: rgb(80, 101, 119);
+    border-radius: 5px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
+    padding: 5vh;
+}
+
+footer {
+    background-color: rgb(25, 32, 38);
+    color: white;
+    padding: 1vh;
+    bottom: 0;
+}
+
+.custom-btn {
+    background-color: rgb(55, 70, 83);
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.custom-btn:hover {
+    background-color: rgb(40, 50, 59);
+    color: white;
+}
+
+#logo-img {
+    padding: 0px;
+}
+
+#login-form-card {
+    padding: 0px;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-img,
+.login-form {
+    width: 90%;
+    max-width: 600px;
+    background: rgb(218, 223, 226);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 100%;
+}
+
+#google-login,
+#facebook-login {
+    border-radius: 15px;
+    transition: 0.2s;
+    width: 47%;
+    height: 90%;
+    margin: 3px;
+}
+
+#facebook-login {
+    background-color: #3b5998;
+}
+
+#facebook-login img {
+    width: 65px;
+}
+
+#google-login {
+    background-color: #ffffff;
+}
+#google-login img {
+    width: 125px;
+}
