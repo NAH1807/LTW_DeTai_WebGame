@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+
     <title>Stim-Login</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="google-signin-client_id" content="992186766822-62s1av7cculqceu9hqj2jcepmtk1bj05.apps.googleusercontent.com">
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -46,7 +48,7 @@
                                 </div>
                                 <div class="row mb-5">
                                     <div class="col-8" style="margin-top: -5px;">
-                                        <a href="#" class="text-decoration-none" style="font-size: 17px;">Forgot password?</a>
+                                        <a href="forgot_password.html" class="text-decoration-none" style="font-size: 17px;">Forgot password?</a>
                                     </div>
                                     <div class="col-4 d-flex justify-content-end">
                                         <button type="submit" class="btn custom-btn" style="font-family: CustomFont;width:100px;height:50px;font-size:large">Login</button>
@@ -55,7 +57,7 @@
                                 <div class="row mb-3">
                                     <div class="col-12 d-flex justify-content-center">
                                         <button class="btn btn-danger col-md-6" type="button" id="google-login">
-                                            <img src="../images/google-logo.png">
+                                            <img src="../images/google-logo.png">  
                                         </button>
                                         <button class="btn btn-primary col-md-6" type="button" id="facebook-login" style="margin-left: 10px;">
                                             <img src="../images/facebook_logo.png">
@@ -90,10 +92,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        integrity="sha384-+0Z9zjyZ2U5fXl3Z5v6Zj5z"></script>
+    <script>
+        document.getElementById("google-login").addEventListener("click", function () {
+            window.location.href = "google_login.php";
+        });
+    </script>
 </body>
 
 </html>
