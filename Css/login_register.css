@@ -113,7 +113,7 @@ footer {
 .login-form {
     width: 90%;
     max-width: 600px;
-    background: rgb(218, 223, 226);
+    background: rgb(245, 245, 245);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     height: 100%;
@@ -168,4 +168,8 @@ footer {
 .register-form.card {
     height: 90vh;
     width: 65%;
+}
+
+#forgot-password-card{
+    background-color: rgb(245, 245, 245);
 }
