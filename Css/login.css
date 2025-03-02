@@ -1,9 +1,8 @@
 @font-face {
     font-family: 'CustomFont';
-    /* Đặt tên tùy ý */
-    src: url('../fonts/Inter-Bold-VariableFont_opsz\,wght.ttf') format('truetype'),
+    src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype'),
         url('../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype'),
-        url('../fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+        url('../fonts/Inter-Bold-VariableFont_opsz\,wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -88,7 +87,7 @@ footer {
 
 .custom-btn:hover {
     background-color: rgb(40, 50, 59);
-    color: white;
+    color: rgb(174, 230, 243);
 }
 
 #logo-img {
@@ -120,22 +119,34 @@ footer {
 #facebook-login {
     border-radius: 15px;
     transition: 0.2s;
-    width: 47%;
-    height: 90%;
+    width: 30%;
+    height: 80%;
     margin: 3px;
 }
 
 #facebook-login {
     background-color: #3b5998;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 #facebook-login img {
-    width: 65px;
+    width: 50px;
 }
 
 #google-login {
     background-color: #ffffff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 #google-login img {
-    width: 125px;
+    width: 100px;
+}
+#google-login:hover{
+    background-color: #d66464;
+}
+#facebook-login:hover{
+    background-color: #7c9bdd;
 }
