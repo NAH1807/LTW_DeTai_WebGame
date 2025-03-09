@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Fixed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script language="javascript" src="style.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo1.png" class="nav-img" alt="Logo" />
+                </a>
+
+
+                <a href="#" class="menu-btn" onmouseover="showDropdown()" onmouseout="hideDropdown()">☰</a>
+
+                <form class="search-form">
+                    <input class="search-box form-control" type="search" placeholder="Search" aria-label="Search" />
+                </form>
+
+                <div class="user-actions">
+                    <div class="login-container">
+                        <a href="login_page.html" class="login-link">Login / Register</a>
+                    </div>
+                    <div class="cart-container">
+                        <button class="btn btn-cart">🛒 Cart <span class="cart-count"></span></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar1" onmouseover="keepDropdown()" onmouseout="hideDropdown()">
+            <div class="container">
+                <a href="#" class="nav-link">👁️Recently Viewed</a>
+                <a href="#" class="nav-link">🔥 Best Sellers</a>
+                <a href="#" class="nav-link">💰 On Sales</a>
+                <a href="#" class="nav-link">💼 Wish List</a>
+                <a href="#" class="nav-link">💳 Payments</a>
+            </div>
+        </nav>
+
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Recently Viewed</a>
+            <a href="#" class="dropdown-item">Best Sellers</a>
+            <a href="#" class="dropdown-item">On Sales</a>
+            <a href="#" class="dropdown-item">Wish List</a>
+            <a href="#" class="dropdown-item">Payments</a>
+        </div>
+    </header>
+    <div class="container mt-4">
+        <div class="row product-container">
+            <div class="col-md-5">
+                <img src="images/black-myth-wukong.png" class="product-img" alt="Black Myth: Wukong">
+            </div>
+
+            <div class="col-md-7">
+                <h1 class="product-title">Black Myth: Wukong</h1>
+                <p class="tinhtrang"><strong>Condition:</strong> <span class="text-success">In stock</span></p>
+                <p class="tinhtrang1">Product Code: black-myth-wukong-steam-account-offline</p>
+                <p class="tinhtrang1"><strong>Genre:</strong> Action, Adventure, RPG</p>
+                <p class="price">99.000đ <span class="old-price ml-2">1.299.000đ</span> <span
+                        class="discount">-92%</span></p>
+
+                <h5>Game</h5>
+                <div class="game-list">
+                    <div class="game-item">Kingdom Come: Deliverance II</div>
+                    <div class="game-item bg-primary text-white">Black Myth: Wukong</div>
+                    <div class="game-item">Baldur's Gate 3</div>
+                    <div class="game-item">Marvel’s Spider-Man 2</div>
+                    <div class="game-item">Monster Hunter Wilds</div>
+                    <div class="game-item">Ori: The Collection</div>
+                    <div class="game-item">Sekiro Shadows Die Twice</div>
+                    <div class="game-item">Middle-earth: Shadow of War</div>
+                    <div class="game-item">Atomic Heart</div>
+                </div>
+
+                <div class="mt-4">
+                    <button class="btn btn-lg btn-buy">🛒 Buy Now</button>
+                    <button class="btn btn-lg btn-cart">🛍️ Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="gioithieu text-center mb-3">
+            <strong>Product Description</strong>
+        </div>
+        <div class="content text-justify">
+            <strong>Black Myth: Wukong</strong> l is an action RPG inspired by Chinese mythology. The story is based on
+            Journey to the West, one of the Four Great Classical Novels of Chinese literature. With a pre-made Steam
+            account, you will take on the role of the Destined Hero, facing challenges and wonders ahead, uncovering the
+            hidden truth behind a legendary tale from the past.
+        </div>
+
+        <div class="cauhinh mt-4">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 border rounded">
+                        <strong>Minimum Requirements</strong>
+                        <ul class="mt-2">
+                            <li>Requires a 64-bit processor and operating system</li>
+                            <li>OS: Windows 10 64-bit</li>
+                            <li>Processor: Intel Core i5-8400 / AMD Ryzen 5 1600</li>
+                            <li>Memory: 16 GB RAM</li>
+                            <li>Graphics: NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB</li>
+                            <li>DirectX: Version 11</li>
+                            <li>Storage: 130 GB available space</li>
+                            <li>Sound Card: Windows Compatible Audio Device</li>
+                            <li>Additional Notes: HDD Supported, SSD Recommended. The above specifications were tested
+                                with DLSS/FSR/XeSS enabled.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="p-3 border rounded">
+                        <strong>Recommended Requirements</strong>
+                        <ul class="mt-2">
+                            <li>Requires a 64-bit processor and operating system</li>
+                            <li>OS: Windows 10 64-bit</li>
+                            <li>Processor: Intel Core i7-9700 / AMD Ryzen 5 5500</li>
+                            <li>Memory: 16 GB RAM</li>
+                            <li>Graphics: NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT / INTEL Arc A750</li>
+                            <li>DirectX: Version 12</li>
+                            <li>Storage: 130 GB available space</li>
+                            <li>Sound Card: Windows Compatible Audio Device</li>
+                            <li>Additional Notes: SSD Required. The above specifications were tested with DLSS/FSR/XeSS
+                                enabled.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="text-center" style="font-family: CustomFont;font-size:large">© 2021 Stim. All rights
+                        reserved.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="text-center" style="font-family: CustomFont;font-size:large">52300202,52300204,52300197
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
