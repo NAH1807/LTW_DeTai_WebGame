@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="..\Css\bootstrap.min.css">
+  <link rel="stylesheet" href="..\Css\home_page.css">
+  <script src="../Js/home_page.js"></script>
+  <script src="../Js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../Image/logo.png" class="nav-img" alt="Logo" />
+        </a>
+        <a href="#" class="menu-btn" onmouseover="showDropdown()" onmouseout="hideDropdown()">☰</a>
+        <form class="search-form">
+          <input class="search-box form-control" type="search" placeholder="Search" aria-label="Search" />
+        </form>
+
+        <div class="user-actions">
+          <div class="login-container">
+            <a href="../Sourse_code/login_page.html" class="login-link">Login /</a>
+            <a href="../Sourse_code/register_page.html" class="register-link"> Register</a>
+          </div>
+          <div class="cart-container">
+            <button class="btn btn-cart">🛒 Cart <span class="cart-count"></span></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar1">
+      <div class="container">
+        <a href="#" class="nav-link">👁️Recently Viewed</a>
+        <a href="#" class="nav-link">🔥Best Sellers</a>
+        <a href="#" class="nav-link">💰On Sales</a>
+        <a href="#" class="nav-link">💼Wish List</a>
+        <a href="#" class="nav-link">💳Payments</a>
+      </div>
+    </nav>
+    <div class="dropdown-menu">
+      <a href="#" class="dropdown-item">👁️Recently Viewed</a>
+      <a href="#" class="dropdown-item">🔥Best Selle</a>
+      <a href="#" class="dropdown-item">💰On Sal</a>
+      <a href="#" class="dropdown-item">💼Wish List</a>
+      <a href="#" class="dropdown-item">💳Payments></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="menu-list">
+      <button class="menu-toggle" onclick="toggleMenu()"> < </button>
+          <div class="menu" id="menu">
+            <a href="#">Thể loại 1</a>
+            <a href="#">Thể loại 2</a>
+            <a href="#">Thể loại 3</a>
+          </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-list">
+      <h2>Product</h2>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="card">
+            <img src="../Image/SanPham.png" alt="avata">
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <p class="text-center" style="font-family: CustomFont;font-size:large">© 2021 Stim. All rights
+            reserved.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <p class="text-center" style="font-family: CustomFont;font-size:large">52300202,52300204,52300197
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
