@@ -1,15 +1,18 @@
 body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;        
+  font-family: Arial, sans-serif;   
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
   background-color: rgb(25, 32, 38);
   padding: 15px 0;
-  width: 100%;
-  border-bottom: 2px solid white;
+  width: 100%; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar .container {
@@ -50,15 +53,18 @@ body {
   gap: 15px;
 }
 
-.login-container {
-  white-space: nowrap;
-}
-
-.login-link {
+.login-container a {
   color: #fff !important;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  text-decoration: underline;
 }
 
 .cart-container {
@@ -66,35 +72,17 @@ body {
 }
 
 .btn-cart {
-  border: solid 2px white;
-  color: #fff;
   padding: 6px 18px;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  background: none;
   font-size: 20px;
 }
 
-.btn-cart:hover {
-  background-color: grey;
-}
-
 .navbar1 {
-  background-color: rgb(108, 113, 126);
+  background-color: #374151;
   color: floralwhite;
   width: 100%;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  padding: 10px 0;
-}
-
-.navbar1 {
-  background-color: rgb(108, 113, 126);
-  color: floralwhite;
-  width: 100%;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
   padding: 10px 0;
 }
 
@@ -159,11 +147,6 @@ body {
   border-bottom: none;
 }
 
-.menu-btn:hover + .dropdown-menu,
-.dropdown-menu:hover {
-  display: flex;
-}
-
 .dropdown-item {
   display: block;
   color: white;
@@ -174,157 +157,327 @@ body {
 .dropdown-item:hover {
   background: grey;
 }
+
 .product-container {
   display: flex;
   align-items: flex-start;
   gap: 30px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
+
 .product-img {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
-  border-radius: 5px;
-  margin-left: 230px;
-  margin-top: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px auto;
 }
+
 .product-title {
-  font-size: 30px;
-  height: 50px;
+  font-size: clamp(24px, 4vw, 30px);
+  line-height: 1.3;
   font-weight: bold;
-  margin-top: 50px;
+  margin: 20px 0;
 }
+
 .text-success {
-  color: green;
-  font-size: 24px;
+  color: #28a745;
+  font-size: clamp(18px, 3vw, 24px);
 }
+
 .tinhtrang,
 .price {
-  font-size: 24px;
+  font-size: clamp(18px, 3vw, 24px);
   font-weight: bold;
-  color: black;
+  color: #333;
+  margin: 10px 0;
 }
+
 .tinhtrang1 {
-  font-size: 24px;
-  color: black;
+  font-size: clamp(18px, 3vw, 24px);
+  color: #333;
 }
+
 .old-price {
   text-decoration: line-through;
-  color: gray;
-  font-size: 18px;
+  color: #6c757d;
+  font-size: clamp(16px, 2.5vw, 18px);
 }
+
 .discount {
-  background: red;
+  background: #dc3545;
   color: white;
-  padding: 5px 8px;
+  padding: 8px 12px;
   border-radius: 4px;
   font-size: 14px;
+  display: inline-block;
+  margin: 5px 0;
 }
+
 .game-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
+  margin: 20px 0;
 }
+
 .game-item {
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 12px 20px;
+  border-radius: 8px;
   background: #e9ecef;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.game-item:hover {
+  background: #dee2e6;
+  transform: translateY(-2px);
+}
+
 .btn-buy,
 .btn-cart {
-  width: 200px;
+  margin: 20px 10px;
+  min-width: 200px;
   height: 50px;
-  font-size: 18px;
+  font-size: clamp(16px, 2.5vw, 18px);
   text-align: center;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn-buy {
-  background: blue;
+  background: #0d6efd;
   color: white;
   font-weight: bold;
-  border: 2px solid blue;
+  border: 2px solid #0d6efd;
+}
+
+.btn-buy:hover {
+  background: #0b5ed7;
+  transform: translateY(-2px);
 }
 
 .btn-cart {
-  background: white;
-  border: 2px solid blue;
-  color: blue;
+  background: #0d6efd;
+  border: 2px solid #0d6efd;
+  color: white;
   font-weight: bold;
 }
+
+.btn-cart:hover {
+  transform: translateY(-2px);
+}
+
 .gioithieu,
 .p-3 {
-  margin-top: 50px;
-  margin-left: 230px;
-  font-size: 24px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-size: clamp(18px, 3vw, 24px);
 }
-.content{
-  margin-left: 500px;
-  font-size: 24px;
+
+.content {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: clamp(16px, 2.5vw, 24px);
+  line-height: 1.6;
 }
+
 .mt-2 {
-  margin-left: 250px;
-  font-size: 22px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-size: clamp(16px, 2.5vw, 22px);
+  line-height: 1.6;
 }
 
 @media (max-width: 1200px) {
   .navbar-brand {
-    display: none !important;
+      display: none;
   }
 
   .menu-btn {
-    display: block !important;
-    font-size: 30px;
-    font-weight: bold;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
+      display: block;
+      font-size: 24px;
+      padding: 12px;
+      margin: 0 10px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
   }
 
   .navbar1 {
-    display: none !important;
-    position: absolute !important;
-    width: 100% !important;
-    background: rgb(108, 113, 126) !important;
-    text-align: center !important;
-    top: 60px !important;
-    left: 0 !important;
-    z-index: 100 !important;
+      display: none;
+      position: absolute;
+      width: 100%;
+      background: linear-gradient(to right, #475569, #64748b);
+      top: 60px;
+      left: 0;
+      z-index: 100;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
 
   .navbar1.show {
-    display: block !important;
-  }
-  .product-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-  .product-img {
-    width: 100%;
-    margin-left: 0;
-  }
-  .col-md-7 {
-    margin-top: 20px;
-  }
-  .content {
-    margin-left: 20px;
+      display: block;
   }
 
-  .cauhinh ul {
-    direction: ltr;
-    text-align: left;
-    padding-left: 0px;
-    margin-left: -180px;
+  .nav-link {
+      display: block;
+      padding: 15px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: left;
+  }
+
+  .nav-link:last-child {
+      border-bottom: none;
+  }
+
+  .product-container {
+      flex-direction: column;
+      padding: 15px;
+      margin: 15px;
+      gap: 20px;
+  }
+
+  .product-img {
+      margin: 0;
+      width: 100%;
+  }
+
+  .product-info {
+      padding: 20px 0;
+  }
+
+  .btn-buy,
+  .btn-cart {
+      width: 100%;
+      margin: 10px 0;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar .container {
+      padding: 10px 15px;
+  }
+
+  .search-form {
+      max-width: none;
+      margin: 0 8px;
+  }
+
+  .search-box {
+      height: 40px;
+      font-size: 14px;
+  }
+
+  .user-actions {
+      gap: 8px;
+  }
+
+  .product-title {
+      font-size: clamp(20px, 5vw, 24px);
+      margin: 15px 0;
+  }
+
+  .tinhtrang,
+  .price {
+      font-size: clamp(16px, 4vw, 20px);
+  }
+
+  .game-list {
+      gap: 10px;
+      padding: 0;
+  }
+
+  .game-item {
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 14px;
+      text-align: center;
+  }
+
+  .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      padding: 0 15px;
+  }
+
+  .gioithieu,
+  .p-3,
+  .content,
+  .mt-2 {
+      padding: 15px;
+      margin: 15px;
+      font-size: clamp(14px, 4vw, 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .container {
+      padding: 8px;
+  }
+
+  .nav-img {
+      width: 60px;
+      height: 60px;
+  }
+
+  .search-box {
+      height: 36px;
+      font-size: 13px;
+      padding: 5px 15px;
+  }
+
+  .product-container {
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .game-item {
+      width: 100%;
+      margin: 5px 0;
+  }
+
+  .product-title {
+      font-size: clamp(18px, 4vw, 20px);
+      line-height: 1.4;
+  }
+
+  .tinhtrang,
+  .price {
+      font-size: clamp(14px, 3.5vw, 16px);
+  }
+
+  .btn-buy,
+  .btn-cart {
+      height: 40px;
+      font-size: 14px;
+      padding: 0 15px;
+  }
+
+  .gioithieu,
+  .p-3,
+  .content,
+  .mt-2 {
+      padding: 12px;
+      margin: 10px;
+      font-size: clamp(13px, 3.5vw, 15px);
+      line-height: 1.5;
+  }
+}
+
 footer {
   background-color: rgb(25, 32, 38);
   color: white;
-  padding: 1vh;
-  bottom: 0;
+  padding: 20px;
   text-align: center;
+  margin-top: 40px;
 }
