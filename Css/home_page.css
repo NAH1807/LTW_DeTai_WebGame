@@ -25,10 +25,10 @@ body {
 }
 
 .nav-img {
-    background-color: white;
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255)
 }
 
 .search-form {
@@ -95,22 +95,23 @@ body {
 }
 
 .navbar1 {
-    background-color: rgb(108, 113, 126);
+    background-color: rgb(42,53,63);
     color: floralwhite;
     width: 100%;
-    border-bottom: 10px solid white;
+    height: 6vh;
+    justify-content: center;
 }
 
 .navbar1 .container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     max-width: 1400px;
+    padding: 10px;
 }
 
 .nav-link {
-    border-right: 2px solid black;
     color: floralwhite !important;
     text-decoration: none;
     flex-grow: 1;
@@ -212,17 +213,16 @@ body {
         display: block !important;
     }
 }
-
-.menu-list{
-    float: left;
+main{
     display: flex;
+    justify-content: space-between;
 }
-.menu-toggle{
-    width: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(108, 113, 126);
-    color: white;
+.menu-list{
+    display: flex;
+    flex-direction: column;
+}
+.menu-button{
+    display: none;
 }
 .menu{
     display: flex;
@@ -235,6 +235,7 @@ body {
     border: 1px solid black;
     color: black;
     align-items: center;
+    padding: 10px;
 }
 .menu a:hover{
     background-color: rgb(108, 113, 126);
@@ -250,7 +251,7 @@ body {
         text-align: center;
         padding: 10px;
     }
-    .menu-toggle {
+    .menu-button{
         display: block;
     }
 }
@@ -258,19 +259,16 @@ body {
 .container{
     width: 100%;
 }
-
+.advertise{
+    height: 200px;
+    width: 100%;
+}
 .card{
     box-shadow:0 5px 10px 0px;
 }
-
-.product-list{
-    width: 100%;
-    clear: both;
-}
-
 footer {
-    border-top: 10px solid white;
-    background-color: rgb(128, 163, 193);
+    border-top: 1px solid white;
+    background-color: rgb(25, 32, 38);
     color: white;
     padding: 1vh;
     bottom: 0;
