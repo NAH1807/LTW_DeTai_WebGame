@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang chủ</title>
-  <link rel="stylesheet" href="..\Css\bootstrap.min.css">
+  <link rel='icon' href='../images/favicon.png' sizes="64x64" type="image/png" />
+  <title>Stim - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="..\Css\home_page.css">
   <script src="../Js/home_page.js"></script>
-  <script src="../Js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="../Image/logo.png" class="nav-img" alt="Logo" />
+          <img src="../images/logo1.png" class="nav-img" alt="Logo" />
         </a>
         <a href="#" class="menu-btn" onmouseover="showDropdown()" onmouseout="hideDropdown()">☰</a>
         <form class="search-form">
@@ -25,121 +28,138 @@
 
         <div class="user-actions">
           <div class="login-container">
-            <a href="../Sourse_code/login_page.html" class="login-link">Login /</a>
-            <a href="../Sourse_code/register_page.html" class="register-link"> Register</a>
+            <a href="../html/login_page.html" class="login-link">Login /</a>
+            <a href="../html/register_page.html" class="register-link"> Register</a>
           </div>
           <div class="cart-container">
-            <button class="btn btn-cart">🛒 Cart <span class="cart-count"></span></button>
+            <button class="btn btn-cart"><img src="../images/shopping-cart.png" style="width: 20px;margin-top:-5px">
+              Cart <span class="cart-count"></span></button>
           </div>
         </div>
       </div>
     </nav>
 
-    <nav class="navbar1">
+    <nav class="navbar1" onmouseover="keepDropdown()" onmouseout="hideDropdown()">
       <div class="container">
-        <a href="#" class="nav-link">👁️Recently Viewed</a>
-        <a href="#" class="nav-link">🔥Best Sellers</a>
-        <a href="#" class="nav-link">💰On Sales</a>
-        <a href="#" class="nav-link">💼Wish List</a>
-        <a href="#" class="nav-link">💳Payments</a>
+        <a href="#" class="nav-link"><img src="../images/eye.png"
+            style="width: 25px;margin-bottom:5px;margin-right:5px">Recently Viewed</a>
+        <a href="#" class="nav-link"><img src="../images/fire-solid.png"
+            style="width: 20px;margin-bottom:5px;margin-right:5px"> Best Sellers</a>
+        <a href="#" class="nav-link"><img src="../images/coins-solid.png"
+            style="width: 25px;margin-bottom:5px;margin-right:5px"> On Sales</a>
+        <a href="#" class="nav-link"><img src="../images/clipboard-list-solid.png"
+            style="width: 19px;margin-bottom:5px;margin-right:5px"> Wish List</a>
+        <a href="#" class="nav-link"><img src="../images/credit-card-regular.png"
+            style="width: 25px;margin-bottom:5px;margin-right:5px"> Payments</a>
       </div>
     </nav>
     <div class="dropdown-menu">
-      <a href="#" class="dropdown-item">👁️Recently Viewed</a>
-      <a href="#" class="dropdown-item">🔥Best Selle</a>
-      <a href="#" class="dropdown-item">💰On Sal</a>
-      <a href="#" class="dropdown-item">💼Wish List</a>
-      <a href="#" class="dropdown-item">💳Payments></a>
+      <a href="#" class="dropdown-item">Recently Viewed</a>
+      <a href="#" class="dropdown-item">Best Selle</a>
+      <a href="#" class="dropdown-item">On Sale</a>
+      <a href="#" class="dropdown-item">Wish List</a>
+      <a href="#" class="dropdown-item">Payments></a>
     </div>
   </header>
 
-  <main>
+  <main class="min-vh-100">
     <div class="menu-list">
-      <button class="menu-toggle" onclick="toggleMenu()"> < </button>
-          <div class="menu" id="menu">
-            <a href="#">Thể loại 1</a>
-            <a href="#">Thể loại 2</a>
-            <a href="#">Thể loại 3</a>
-          </div>
+      <button onclick="toggleMenu()" class="menu-button btn btn-secondary dropdown-toggle">
+        Menu
+      </button>
+      <div class="menu" id="menu">
+        <a href="#">Thể loại 1</a>
+        <a href="#">Thể loại 2</a>
+        <a href="#">Thể loại 3</a>
+      </div>
     </div>
+
     <div class="container">
+      <div class="card">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+              <img src="../images/SanPham.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../images/SanPham.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../images/SanPham.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
+            <img src="../images/SanPham.png" alt="avata">
           </div>
         </div>
 
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
+            <img src="../images/SanPham.png" alt="avata">
           </div>
         </div>
 
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
           <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
+            <img src="../images/SanPham.png" alt="avata">
           </div>
         </div>
+        <div class="product-list">
+          <h2>Product</h2>
+          <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card">
+                <img src="../images/SanPham.png" alt="avata"><a class="text-decoration-none" href="Decription.html"
+                  style="color: black; font-size: 20px;"> Black Myth: Wukong <br> Price: 99.000đ</a>
+              </div>
+            </div>
 
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
-          </div>
-        </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card">
+                <img src="../images/SanPham.png" alt="avata">
+              </div>
+            </div>
 
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
-          </div>
-        </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card">
+                <img src="../images/SanPham.png" alt="avata">
+              </div>
+            </div>
 
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card">
+                <img src="../images/SanPham.png" alt="avata">
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card">
+                <img src="../images/SanPham.png" alt="avata">
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card">
+                <img src="../images/SanPham.png" alt="avata">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="product-list">
-      <h2>Product</h2>
-      <div class="row">
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
-          </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-          <div class="card">
-            <img src="../Image/SanPham.png" alt="avata">
-          </div>
-        </div>
-      </div>
   </main>
 
   <footer>
@@ -159,5 +179,9 @@
     </div>
   </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-+0Z9zjyZ2U5fXl3Z5v6Zj5z"></script>
 
 </html>
