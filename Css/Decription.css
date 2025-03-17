@@ -80,7 +80,7 @@ body {
 }
 
 .navbar1 {
-  background-color: #374151;
+  background-color: rgb(42,53,63);
   color: floralwhite;
   width: 100%;
   padding: 10px 0;
@@ -252,25 +252,26 @@ body {
 }
 
 .btn-buy {
-  background: #0d6efd;
+  background: rgb(60, 77, 92);
   color: white;
   font-weight: bold;
-  border: 2px solid #0d6efd;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .btn-buy:hover {
-  background: #0b5ed7;
+  background: rgb(48, 60, 70);
   transform: translateY(-2px);
 }
 
 .btn-cart {
-  background: #0d6efd;
-  border: 2px solid #0d6efd;
+  background: rgb(60, 77, 92);
+  border: 2px solid rgb(0, 0, 0);
   color: white;
   font-weight: bold;
 }
 
 .btn-cart:hover {
+  background: rgb(48, 60, 70);
   transform: translateY(-2px);
 }
 
