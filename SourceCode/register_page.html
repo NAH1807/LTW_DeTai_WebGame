@@ -20,18 +20,18 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid justify-content-center" name="navbar">
-                <a class="navbar-brand" href="index.html"><img src="../images/logo1.png" class="nav-img change-color"></a>
+                <a class="navbar-brand" href="home_page.html"><img src="../images/logo1.png" class="nav-img change-color"></a>
             </div>
         </nav>
     </header>
     <main class="flex-fill">
-        <div class="container d-flex justify-content-center align-items-center login-container">
+        <div class="container d-flex justify-content-center align-items-center register-container min-vh-100">
             <div class="row w-100">
                 <!-- Form Register -->
                 <div class="col-xl-12 col-12 d-flex justify-content-center align-items-center" id="register-form-card">
                     <div class="register-form card">
                         <div class="card-body">
-                            <h4 class="card-title text-center mb-4" style="font-family: CustomFont;font-weight:bold;font-size:35px">Register</h4>
+                            <h4 class="card-title text-center mb-4" style="font-family: CustomFont;font-weight:bold;font-size:35px" id="form-title">Register</h4>
                             <form action="register.php" method="post">
                                 <div class="mb-4">
                                     <input type="text" class="form-control" id="username" name="username" required placeholder="Username" style="height: 45px;"/>
@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="row mb-4">
                                     <div class="col-3 mt-2 d-none d-md-block">
-                                        <h5 style="font-family: CustomFont;font-weight:lighter">Birthday</h3>
+                                        <h5 style="font-family: CustomFont;font-weight:lighter" id="birthday-label">Birthday</h3>
                                     </div>
                                     <div class="col-9 d-flex justify-content-end" id="birthday-input">
                                         <input type="date" class="form-control" id="birthday" name="birthday" required placeholder="mm/dd/yyyy" style="height: 45px;"/>
@@ -57,7 +57,7 @@
                                     <div class="col-12 d-flex justify-content-start">
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
-                                            <label class="form-check-label" for="flexSwitchCheckDefault" style="font-family: CustomFont;font-size:large">I agree to the <a href="#" class="text-decoration-none">Terms of Service</a> and <a href="#" class="text-decoration-none">Privacy Policy</a></label>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault" style="font-family: CustomFont;font-size:large" id="form-check-label-1">I agree to the <a href="#" class="text-decoration-none">Terms of Service</a> and <a href="#" class="text-decoration-none">Privacy Policy</a></label>
                                         </div>
                                     </div>
                                 </div>    
@@ -67,8 +67,8 @@
                                     </div>
                                 </div>
                             </form>
-                            <div class="text-center mt-5 justify-content-bottom">
-                                <p style="font-family: CustomFont;font-size:large">Already have an account? <a href="login_page.html" class="text-decoration-none">Log in</a></p>
+                            <div class="text-center mt-5 justify-content-bottom" id="end-label">
+                                <p class="end-label" style="font-family: CustomFont;font-size:large">Already have an account? <a href="login_page.html" class="text-decoration-none">Log in</a></p>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
         </div>
     </main>
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid footer1">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center align-items-center">
                     <p class="text-center" style="font-family: CustomFont;font-size:large">© 2021 Stim. All rights reserved.</p>
